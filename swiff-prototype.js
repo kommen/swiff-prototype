@@ -32,7 +32,7 @@ var Swiff = new Class({
 	},
 
 	initialize: function(path, options){
-		this.instance = 'Swiff_' + $time();
+		this.instance = 'Swiff_' + new Date().getTime();
 
 		this.setOptions(options);
 		options = this.options;
