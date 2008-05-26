@@ -9,7 +9,7 @@ Credits:
 	Flash detection & Internet Explorer + Flash Player 9 fix inspired by SWFObject.
 */
 
-var Swiff = new Class({
+var Swiff = Class.create({
 
 	options: {
 		id: null,
