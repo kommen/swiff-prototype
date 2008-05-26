@@ -11,8 +11,6 @@ Credits:
 
 var Swiff = new Class({
 
-	Implements: [Options],
-
 	options: {
 		id: null,
 		height: 1,
@@ -73,6 +71,10 @@ var Swiff = new Class({
 		}
 		build += '</object>';
 		this.object =  ((container) ? container.empty() : new Element('div')).set('html', build).firstChild;
+	},
+	
+	setOptions: function(options) {
+	  this.options = Object.extend(this.options, options);
 	},
 
 	replaces: function(element){
